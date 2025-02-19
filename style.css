@@ -65,3 +65,39 @@ button {
     border: none;
     cursor: pointer;
 }
+
+/* FAQ Section */
+#faq {
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+.faq-item {
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.faq-item input {
+    display: none;
+}
+
+.faq-item label {
+    display: block;
+    background: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.faq-content {
+    display: none;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.faq-item input:checked + label + .faq-content {
+    display: block;
+}

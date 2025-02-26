@@ -12,4 +12,4 @@ A simple landing page for a custom T-shirt business.
 [View Here](https://urmjsty.github.io/tum-web-lab2/)
 
 ## Screenshot
-![Preview](screenshot.png)
+![Preview](assets/images/screenshot.png)

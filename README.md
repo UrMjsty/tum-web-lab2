@@ -9,7 +9,7 @@ A simple landing page for a custom T-shirt business.
 - Responsive design with vanilla HTML & CSS
 
 ## Live Demo
-[View Here](https://your-username.github.io/repo-name/)
+[View Here](https://urmjsty.github.io/tum-web-lab2/)
 
 ## Screenshot
-![Preview](screenshot.jpg)
+![Preview](screenshot.png)

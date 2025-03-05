@@ -46,18 +46,20 @@ nav a:hover {
 .cta-button {
     background: #00274d;
     color: white;
-    padding: 12px 24px;
+    padding: 16px 32px;  /* Increased padding for a bigger button */
     text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
+    font-size: 22px;  /* Increased font size */
+    border-radius: 8px;  /* Slightly larger rounding for aesthetics */
     display: inline-block;
-    margin-top: 15px;
-    transition: background 0.3s;
+    margin-top: 20px;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .cta-button:hover {
     background: #0056b3;
+    transform: scale(1.1);  /* Slight enlargement on hover */
 }
+
 
 /* About Section */
 #about {
@@ -65,16 +67,14 @@ nav a:hover {
     padding: 40px 20px;
     color: #333;
 }
-
-/* Products Section */
 #products {
     background: #fdf2e9;
     padding: 40px 20px;
 }
 
 .product {
-    width: 220px; /* Fixed width */
-    height: 320px; /* Fixed height */
+    width: 100%; /* Ensures product takes full width of its column */
+    height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,12 +88,9 @@ nav a:hover {
 
 .product img {
     max-width: 100%;  /* Ensures images don't exceed container width */
-    max-height: 150px; /* Limits height but keeps proportions */
-    width: auto;
-    height: auto;
+    max-height: 150px;
     border-radius: 8px;
 }
-
 
 .product:hover {
     transform: translateY(-5px);
@@ -139,11 +136,20 @@ nav a:hover {
     display: block;
 }
 
-/* Contact Section */
-#contact {
-    background: white;
-    padding: 40px 20px;
+#contact button {
+    background: #ff6600;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
+
+#contact button:hover {
+    background: #cc5200;
+}
+
 
 form input, form textarea {
     display: block;

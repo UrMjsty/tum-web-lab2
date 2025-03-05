@@ -36,12 +36,12 @@ nav a:hover {
     color: #ffeeba;
 }
 
-/* Hero Section */
 .hero {
     background: linear-gradient(135deg, #f8761f, #f4ba67);
     color: white;
     padding: 60px 20px;
 }
+
 
 .cta-button {
     background: #00274d;

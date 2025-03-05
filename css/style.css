@@ -7,13 +7,13 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Header */
 header {
-    background: #fd9551;
-    color: white;
+    background: #fd9551;  /* REMOVE: Bootstrap handles this */
+    color: white;         /* REMOVE */
     padding: 15px 0;
     font-size: 20px;
 }
+
 
 nav ul {
     list-style: none;
@@ -36,28 +36,30 @@ nav a:hover {
     color: #ffeeba;
 }
 
-/* Hero Section */
 .hero {
     background: linear-gradient(135deg, #f8761f, #f4ba67);
     color: white;
     padding: 60px 20px;
 }
 
+
 .cta-button {
     background: #00274d;
     color: white;
-    padding: 12px 24px;
+    padding: 16px 32px;  /* Increased padding for a bigger button */
     text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
+    font-size: 22px;  /* Increased font size */
+    border-radius: 8px;  /* Slightly larger rounding for aesthetics */
     display: inline-block;
-    margin-top: 15px;
-    transition: background 0.3s;
+    margin-top: 20px;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .cta-button:hover {
     background: #0056b3;
+    transform: scale(1.1);  /* Slight enlargement on hover */
 }
+
 
 /* About Section */
 #about {
@@ -65,33 +67,34 @@ nav a:hover {
     padding: 40px 20px;
     color: #333;
 }
-
-/* Products Section */
 #products {
     background: #fdf2e9;
     padding: 40px 20px;
 }
 
 .product {
-    display: inline-block;
-    margin: 20px;
-    background: white;
+    width: 100%; /* Ensures product takes full width of its column */
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px;
+    background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
-.product:hover {
-    transform: translateY(-5px);
-}
-
 .product img {
-    width: 180px;
-    height: auto;
+    max-width: 100%;  /* Ensures images don't exceed container width */
+    max-height: 150px;
     border-radius: 8px;
 }
 
+.product:hover {
+    transform: translateY(-5px);
+}
 /* FAQ Section */
 #faq {
     background: #e0f7fa;
@@ -133,11 +136,20 @@ nav a:hover {
     display: block;
 }
 
-/* Contact Section */
-#contact {
-    background: white;
-    padding: 40px 20px;
+#contact button {
+    background: #ff6600;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
+
+#contact button:hover {
+    background: #cc5200;
+}
+
 
 form input, form textarea {
     display: block;
